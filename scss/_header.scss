@@ -1,0 +1,68 @@
+header{
+  padding: 15px;
+  background: $fourth;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-info-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  text-transform: none;
+}
+.address, .phone, .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.icon-header{
+  color: $third;
+  padding: 13px;
+
+}
+.info-header{
+  font-size: 14px/$font-size-base*1rem;
+  line-height: 20px;
+ }
+.icon-social{
+  color: $primary;
+  padding: 10px;
+}
+.phone:hover{
+  cursor: pointer;
+}
+.icon-social:hover i{
+  color: $third;
+}
+@media (min-width: 710px){
+  header{
+    padding: 10px;
+  }
+  .contacts{
+    flex-direction: row;
+  }
+}
+@media (min-width: 940px){
+   .wrap-info-header{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+

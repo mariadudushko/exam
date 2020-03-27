@@ -1,0 +1,83 @@
+.slider{
+  color: $primary;
+  background: $fourth url(../images/page_home/bg_home.jpg) no-repeat fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.slider-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-slider{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  
+}
+h6{
+  font-size: 24px/$font-size-base*1rem;
+  font-weight: 700;
+  letter-spacing: 5.6px;
+  margin: 10px 0;
+}
+.sub-title-slider{
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.arrow{
+  color: #c8c8c8;
+  font-size: 30px/$font-size-base*1rem;
+  position: absolute;
+  top: 20%;
+}
+.next{
+  right: 20px;
+}
+.prev{
+  left: 20px;
+}
+.btn-slider{
+  border-radius: 5px;
+}
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $btn-font-size;
+  margin-top: 80px;
+}
+.icon-circle{
+  color: $fifth;
+  padding: 8px;
+}
+.icon-circle-active{
+  color: $primary;
+}
+.icon-circle:hover i{
+  color:$primary;
+  cursor: pointer;
+}
+.arrow:hover{
+  cursor: pointer;
+}
+@media (min-width:780px){
+  h6{
+  font-size: 50px/$font-size-base*1rem;
+  }
+  .arrow{
+    font-size: 52px/$font-size-base*1rem;
+  }
+}
+@media (min-width:1040px){
+  h6{
+  font-size: 80px/$font-size-base*1rem;
+  }
+}

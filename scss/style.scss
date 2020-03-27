@@ -1,0 +1,53 @@
+/*
+ * e-shop template
+ * dudushko maria
+ * 2020
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:200,300,400,700&display=swap');
+// @import 'normalize.css';
+@import 'main-normalize';
+@import 'variables';
+
+html{
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  text-transform: $text-transform-base;
+  letter-spacing: 0;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  min-width: $min-width-container;
+  max-width: $max-width-container;
+}
+a{
+  display: inline-block;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  background:$third;
+  font-size: $btn-font-size;
+  margin-top: 40px;
+  padding: 20px 40px;
+  color: $primary;
+}
+img{
+  display: block;
+}
+section{
+  padding: 80px 0;
+}
+.btn:hover {
+  background: $secondary;
+}
+@import 'header';
+@import'menu';
+@import 'slider';
+@import 'our-services';
+@import 'our-history';
+
+@import 'assist';

@@ -1,0 +1,40 @@
+body{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.assist{
+  width: 70px;
+  height: 70px;
+  background: url(../images/assistent.jpg) center/cover no-repeat;
+  border-radius: 50%;
+  border: 1px solid $primary;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+.num{
+  width: 13px;
+  height: 13px;
+  background: #1FC71B;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+}
+.message{
+  display: none;
+  background:#1FC71B;
+  color: $primary;
+  font-size: 12px;
+  text-transform: none;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: -350%;
+  transform: translateY(-50%);
+}
+.assist:hover .message{
+  display: block;
+}
